@@ -1,0 +1,77 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/spacing_normal"
+    android:orientation="vertical"
+    android:keepScreenOn="true">
+
+    <TextView
+        android:id="@+id/label_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/spacing_normal"
+        android:text="@string/app_name"
+        android:textAppearance="?android:textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/label_server"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/field_server"
+        android:textAppearance="?android:textAppearanceMedium"
+        android:text="@string/label_server" />
+
+    <EditText
+        android:id="@+id/field_server"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/label_name"
+        android:layout_marginStart="12dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="163dp"
+        android:layout_toEndOf="@+id/label_server"
+        android:layout_toRightOf="@+id/label_server"
+        android:autofillHints=""
+        android:text="http://104.237.2.72:8082"
+        tools:text="http://104.237.2.72:8082" />
+
+    <TextView
+        android:id="@+id/label_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/field_server"
+        android:layout_alignEnd="@+id/field_server"
+        android:layout_marginTop="47dp"
+        android:layout_marginEnd="0dp"
+        android:gravity="center_horizontal"
+        android:text="@string/label_info" />
+
+    <Button
+        android:id="@+id/button_start"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/label_info"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="43dp"
+        android:paddingStart="@dimen/spacing_normal"
+        android:paddingLeft="@dimen/spacing_normal"
+        android:paddingEnd="@dimen/spacing_normal"
+        android:paddingRight="@dimen/spacing_normal"
+        android:text="@string/button_start" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="131dp"
+        android:layout_height="99dp"
+        android:layout_alignEnd="@+id/label_name"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="107dp"
+        android:layout_marginEnd="-11dp"
+        app:srcCompat="@mipmap/ic_launcher"
+        tools:srcCompat="@mipmap/ic_launcher" />
+
+</RelativeLayout>

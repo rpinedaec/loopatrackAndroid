@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">LoopaTrack</string>
+    <string name="label_server">Servidor</string>
+    <string name="label_info">Esta pantalla se mostrará solo una vez. Después de hacer clic en el botón, la dirección del servidor se guardará en las preferencias. Para cambiarlo, borre los datos de la aplicación del administrador de aplicaciones.</string>
+    <string name="button_start">Empezar</string>
+    <string name="error_connection">Fallo conexion del servidor</string>
+    <string name="file_browser">Buscador de Archivos</string>
+    <string name="notification_channel">Default</string>
+
+</resources>

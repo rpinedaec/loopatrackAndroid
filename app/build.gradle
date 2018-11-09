@@ -1,0 +1,38 @@
+apply plugin: 'com.android.application'
+apply plugin: 'com.google.gms.google-services'
+
+android {
+    compileSdkVersion 28
+    buildToolsVersion '28.0.3'
+
+    defaultConfig {
+        applicationId 'com.lupa'
+        minSdkVersion 19
+        targetSdkVersion 26
+        versionCode 18
+        versionName '2.8'
+    }
+
+    flavorDimensions 'default'
+    productFlavors {
+        regular
+        google
+    }
+}
+
+dependencies {
+    googleImplementation 'com.android.support:design:28.0.0'
+    googleImplementation 'com.android.support.constraint:constraint-layout:1.1.3'
+    googleImplementation 'com.google.firebase:firebase-core:16.0.3'
+    googleImplementation 'com.android.support:appcompat-v7:28.0.0'
+    googleImplementation 'com.crashlytics.sdk.android:crashlytics:2.9.5'
+    googleImplementation 'com.google.firebase:firebase-messaging:17.3.4'
+    googleImplementation 'com.android.support:animated-vector-drawable:28.0.0'
+    googleImplementation 'com.android.support:support-media-compat:28.0.0'
+    implementation "me.leolin:ShortcutBadger:1.1.22@aar"
+  }
+
+if (getGradle().getStartParameter().getTaskRequests().toString().contains('Google')) {
+    apply plugin: 'com.google.gms.google-services'
+    apply plugin: 'io.fabric'
+}
